@@ -30,7 +30,7 @@ app.post('/callback', line.middleware(config), (req, res) => {
     });
 });
 
-app.post('/webhook', function (req, res) {
+app.post('/webhook',bodyParser.json(),  function (req, res) {
 
 
 
